@@ -54,7 +54,7 @@ void init_EE(void)
 {
 	// not initialised
 	// so initialise (write eeprom)
-	for (uint8_t i=0; i < (uint16_t)&my_ee_address ; i++)
+	for (uint8_t i=0; i < (uint16_t) &my_ee_address ; i++)
 		eeprom_write_byte(&my_ee_address + i, eeprom_read_byte(&b_my_ee_address + i));
 }
 
