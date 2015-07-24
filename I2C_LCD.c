@@ -169,7 +169,7 @@ int main(void)
 	{
 		while (usiTwiDataInReceiveBuffer())	// process I2C command
 		{
-			processTWI();
+		processTWI();
 		}
 	}
 }
